@@ -1,6 +1,6 @@
 # Olist E-Commerce: Logistics & Sentiment Diagnostic
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white) ![LightGBM](https://img.shields.io/badge/LightGBM-ff69b4?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white) ![LightGBM](https://img.shields.io/badge/LightGBM-ff69b4?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Random Forest](https://img.shields.io/badge/Random%20Forest-228B22?style=for-the-badge&logo=scikit-learn&logoColor=white) ![XGBoost](https://img.shields.io/badge/XGBoost-0091D5?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Sentiment Classification](https://img.shields.io/badge/Sentiment%20Classification-8A2BE2?style=for-the-badge)
 
 <details>
   <summary>📋 <b>Table of Contents</b> (Click to Expand)</summary>
