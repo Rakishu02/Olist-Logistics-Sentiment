@@ -78,7 +78,7 @@ LEFT JOIN Deduplicated_Reviews AS rev ON o.order_id = rev.order_id;
 ---
 
 ### 5. Strategic Recommendations
-* Geographic Ad Spend Freeze: Temporarily pause 'Paid Search' acquisition campaigns in high-risk zones (**SP** and **RJ**). We are currently paying premium acquisition costs to drive customers into a failing logistical network, risking **R$60K+**.
+* Geographic Ad Spend Freeze: Temporarily pause 'Paid Search' acquisition campaigns in high-risk zones (**SP** and **RJ**). The management is currently paying premium acquisition costs to drive customers into a failing logistical network, risking **R$60K+**.
 * SLA Renegotiation in **SP** & **RJ**: Immediately audit the last-mile delivery partners in Sao Paulo and Rio de Janeiro. These regions account for over **R$131,000** in revenue at risk; if SLAs cannot be met, alternative 3PL partners must be sourced.
 * Fulfillment Audit for Health & Beauty: Investigate the specific fulfillment pipeline for Health & Beauty products. Implement dynamic checkout messaging to set realistic shipping expectations for these items to mitigate the disproportionate volume of 1-star reviews.
 
