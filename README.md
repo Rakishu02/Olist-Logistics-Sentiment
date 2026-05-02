@@ -40,20 +40,22 @@ This project analyzes **100k+** orders (2016-2018) from the Olist public dataset
 * Visualization (*Tableau*): Built an executive dashboard (`Dashboard.twbx`) utilizing dual-axis charts and strict figure-ground color hierarchy (grey for baseline context, red for at-risk revenue).
 
 <details>
-<summary>💡 <b>View Code Snippet: NLP Text Processing Pipeline</b></summary>
+<summary>💡 <b>View Code Snippet: The Core SQL Join (Breaking Data Silos)</b></summary>
 
-```python
-# Extracting logistical failure signals from raw Portuguese text
-from sklearn.feature_extraction.text import TfidfVectorizer
-from lightgbm import LGBMClassifier
-
-# Vectorize customer reviews focusing on operational root causes
-tfidf = TfidfVectorizer(max_features=1000, ngram_range=(1,2))
-X_features = tfidf.fit_transform(reviews['review_message_pt'])
-
-# LightGBM chosen for its superior recall in detecting 1-star logistical failures
-model = LGBMClassifier(class_weight='balanced', random_state=42)
-model.fit(X_features, y_target)
+```sql
+-- Linking Marketing Acquisition directly to Logistical Reality & Customer Sentiment
+SELECT
+    mql.origin AS marketing_channel,
+    cd.business_segment,
+    agg.total_order_revenue,
+    -- Precise Postgres date math for SLA breaches
+    DATE_PART('day', o.order_delivered_customer_date::timestamp - o.order_estimated_delivery_date::timestamp) AS logistical_delay_days,
+    rev.final_review_score
+FROM olist_marketing_qualified_leads_dataset AS mql
+INNER JOIN olist_closed_deals_dataset AS cd ON mql.mql_id = cd.mql_id
+LEFT JOIN Aggregated_Items AS agg ON cd.seller_id = agg.seller_id
+LEFT JOIN olist_orders_dataset AS o ON agg.order_id = o.order_id
+LEFT JOIN Deduplicated_Reviews AS rev ON o.order_id = rev.order_id;
 ```
 </details>
 
